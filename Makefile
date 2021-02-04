@@ -34,6 +34,10 @@ install:
 clean:
 	@rm -rf ./bin
 
+set-environment:
+	go get -u github.com/mikkeloscar/sshconfig
+	go get -u github.com/pkg/errors
+	go get -u github.com/pressly/sup/cmd/sup
 tools:
 	go get -u github.com/kardianos/govendor
 
